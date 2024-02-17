@@ -1,0 +1,24 @@
+Búsqueda Binaria:
+final = longitud de arreglo - 1
+
+mientras inicio <= final:
+    medio = (inicio + final) dividido 2
+
+    si arreglo[medio] = objetivo:
+        retornar medio
+
+    si arreglo[medio] < objetivo:
+        inicio = medio + 1
+
+    si no:
+        final = medio - 1
+
+retornar -1
+
+Búsqueda Secuencial:
+function busquedaSecuencial(arreglo, objetivo):
+    para i desde 0 hasta longitud de arreglo - 1:
+        si arreglo[i] = objetivo:
+            retornar i
+
+    retornar -1
